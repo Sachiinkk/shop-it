@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  nav {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  nav img{
+    width:13%;
+    border-radius: 63px;
+
+
+}
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .hero {
+    background: #f5f5f5;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+  .btn {
+    display: inline-block;
+  }
+  .featured-products{
+    text-align: center;
+    font-family: cursive;
+    margin-top: 20px;
+  }
+  .text{
+    /* border: 2px solid rgb(14, 1, 1); */
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    height: 400px;
+    width: 100%;
+   
+  }
+  .product{
+    /* border: 2px solid red; */
+    margin: 20px 30px;
+    padding: 20px;
+    background-color:#f5f5f5 ;
+  }
+  .btn{
+    color: solid black;
+    text-align:  center;
+    margin-left: 141px;
+    text-decoration: none;
+    margin-top: 17px;
+    
+  }
+  .shop{
+    text-align: center;
+    text-decoration: none;
+  }
+  a:hover
+  {
+    border-radius: 6px;
+    width: 10px;
+  color: #ffffff;
+  background-color: rgb(68, 66, 66);
+  }
+  .last{
+    text-align: center;
+    color: solid black;
+  }
+  .head{
+    font-family: cursive;
+  }
+   img :hover{
+    color: rgb(12, 148, 148);
+   }
