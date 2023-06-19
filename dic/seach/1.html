@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coming Soon</title>
+    <style>
+        body {
+            margin-top: 60px;
+           
+            width: 50%;
+             margin-left: 25%;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: rgb(120, 244, 202);
+            
+        }
+        h1 {
+            font-size: 60px;
+            margin-top: 200px;
+        }
+        h2{
+           font-size: 50px; 
+        }
+        #countdown {
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Brands are</h1>
+    <h2>Coming Soon</h2>
+    <p id="countdown"></p>
+
+    <script>
+        
+const targetDate = new Date('2023-12-31T00:00:00');
+
+function updateCountdown() {
+    const currentDate = new Date();
+    const timeDifference = targetDate - currentDate;
+
+    // Calculate days, hours, minutes, and seconds
+    const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+    // Display the countdown
+    document.getElementById('countdown').innerHTML = `Coming in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+    // Check if the target date has passed
+    if (timeDifference < 0) {
+        document.getElementById('countdown').innerHTML = 'Coming Soon!';
+    }
+}
+
+// Call the updateCountdown function every second
+setInterval(updateCountdown, 1000);
+
+    </script>
+</body>
+</html>
